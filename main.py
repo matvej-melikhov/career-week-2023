@@ -11,6 +11,9 @@ from flask_admin.contrib.sqla import ModelView
 
 from app import db
 
+from flask import Response, request
+from werkzeug.exceptions import HTTPException
+
 class UserView(ModelView):
     page_size = 100
     can_export = True
@@ -21,6 +24,22 @@ class UserView(ModelView):
 
 admin.add_view(UserView(User, db.session))
 
+# Protect admin panel using Basic Auth
+@application.before_request
+def restrict_admin():
+    if request.path.startswith("/admin/info"):
+        auth = request.authorization
+        if not auth or not (auth.username == application.config.get("ADMIN_USERNAME", "admin") and 
+                            auth.password == application.config.get("ADMIN_PASSWORD", "sokt2023")):
+            raise HTTPException('', Response(
+                "Could not verify your access level for that URL.\n"
+                "You have to login with proper credentials", 401,
+                {'WWW-Authenticate': 'Basic realm="Login Required"'}
+            ))
+
+# Ensure database tables are created automatically
+with application.app_context():
+    db.create_all()
 
 if __name__ == "__main__":
-    application.run(debug=True)
+    application.run(host="0.0.0.0", debug=True)
