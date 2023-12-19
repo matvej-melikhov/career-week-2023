@@ -10,15 +10,15 @@
     <meta property="og:site_name" content="Студенческая карьерная неделя СОКТ">
     <meta property="og:url" content="https://sokt-profcom.ru">
     <meta property="og:description" content="Для студентов карьерная неделя — отличный шанс познакомиться с новыми людьми, завести профессиональные связи, получить инсайды и возможность получить стажировку.">
-    <meta property="og:image" content="{{ url_for('index') }}static/img/sokt-preview.png">
+    <meta property="og:image" content="{{ url_for('static', filename='img/sokt-preview.png') }}">
 
-    <link rel="icon" href="{{ url_for('index') }}static/img/sokt.png">
-    <link rel="stylesheet" href="{{ url_for('index') }}static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{ url_for('index') }}static/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="{{ url_for('index') }}static/css/main.css">
+    <link rel="icon" href="{{ url_for('static', filename='img/sokt.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <script src="https://kit.fontawesome.com/0ad5947fc3.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="{{ url_for('index') }}static/js/owl.carousel.min.js"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
 </head>
 
 <body>
@@ -33,10 +33,10 @@
         <header class="header">
             <div class="header__left">
                 <div class="header__logos">
-                    <img class="header__etu" src="{{ url_for('index') }}static/img/etu.png" alt="">
-                    <img class="header__etu_mini" src="{{ url_for('index') }}static/img/etu-mini.png" alt="">
-                    <img src="{{ url_for('index') }}static/img/sokt.png" alt="">
-                    <img src="{{ url_for('index') }}static/img/profcom.png" alt="">
+                    <img class="header__etu" src="{{ url_for('static', filename='img/etu.png') }}" alt="">
+                    <img class="header__etu_mini" src="{{ url_for('static', filename='img/etu-mini.png') }}" alt="">
+                    <img src="{{ url_for('static', filename='img/sokt.png') }}" alt="">
+                    <img src="{{ url_for('static', filename='img/profcom.png') }}" alt="">
                 </div>
             </div>
             <div class="header__right">
@@ -113,24 +113,24 @@
 
             <div class="slider owl-carousel owl-theme" id="slider">
 
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/1.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/2.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/3.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/4.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/5.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/6.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/7.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/8.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/9.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/10.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/11.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/12.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/13.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/14.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/15.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/16.jpg')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/17.png')"></div>
-                <div class="slide" style="background-image: url('{{ url_for('index') }}static/img/18.png')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/1.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/2.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/3.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/4.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/5.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/6.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/7.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/8.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/9.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/10.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/11.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/12.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/13.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/14.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/15.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/16.jpg') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/17.png') }}')"></div>
+                <div class="slide" style="background-image: url('{{ url_for('static', filename='img/18.png') }}')"></div>
 
             </div>
 
@@ -145,12 +145,36 @@
             <form action="" method="POST" class="reg__form">
 
                 <input required name="name" type="text" class="reg__input" placeholder="Имя фамилия">
-                <input required name="course" type="text" class="reg__input" placeholder="Курс">
-                <input required name="faculty" type="text" class="reg__input" placeholder="Факультет">
-                <input required name="grade" type="text" class="reg__input" placeholder="Направление подготовки">
+                
+                <select required name="course" class="reg__input">
+                    <option value="" disabled selected hidden>Курс</option>
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                    <option value="4">4 курс</option>
+                </select>
+
+                <select required name="faculty" class="reg__input">
+                    <option value="" disabled selected hidden>Факультет</option>
+                    <option value="ФКТИ">ФКТИ</option>
+                    <option value="ФРТ">ФРТ</option>
+                    <option value="ФЭЛ">ФЭЛ</option>
+                    <option value="ФЭА">ФЭА</option>
+                    <option value="ФИБС">ФИБС</option>
+                    <option value="ГФ">ГФ</option>
+                    <option value="ИНФРОТЕХ">ИНФРОТЕХ</option>
+                </select>
+
+                <select required name="grade" class="reg__input">
+                    <option value="" disabled selected hidden>Направление подготовки</option>
+                    <option value="Бакалавриат">Бакалавриат</option>
+                    <option value="Магистратура">Магистратура</option>
+                    <option value="Аспирантура">Аспирантура</option>
+                </select>
+
                 <input required name="email" type="text" class="reg__input" placeholder="Почтовый ящик">
 
-                <textarea class="reg__input" name="from" id="" rows="5" placeholder="Откуда узнали про Карьерную неделю СОКТ?"></textarea>
+                <textarea class="reg__input" name="reason" id="" rows="5" placeholder="Откуда узнали про Карьерную неделю СОКТ?"></textarea>
 
                 <div class="reg__check">
                     <input required type="checkbox">

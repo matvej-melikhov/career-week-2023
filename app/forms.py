@@ -3,7 +3,7 @@ from wtforms.validators import DataRequired
 
 class UserForm(Form):
     name = StringField("Фамилия Имя", description="Фамилия Имя", validators=[DataRequired()])
-    course = SelectField("Курс", choices=[1, 2, 3, 4], description="Курс", validators=[DataRequired()])
+    course = SelectField("Курс", choices=["1", "2", "3", "4"], description="Курс", validators=[DataRequired()])
     faculty = SelectField(
         "Факультет",
         choices=["ФКТИ", "ФРТ", "ФЭЛ", "ФЭА", "ФИБС", "ГФ", "ИНФРОТЕХ"],
@@ -17,4 +17,4 @@ class UserForm(Form):
         validators=[DataRequired()]
     )
     email = StringField("Почтовый адрес", description="Почтовый адрес", validators=[DataRequired()])
-    reason = TextAreaField("Откуда узнали о мероприятии", description="Откуда узнали о нас?", validators=[DataRequired()])
+    reason = TextAreaField("Откуда узнали о мероприятии", description="Откуда узнали о нас?")

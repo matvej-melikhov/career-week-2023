@@ -315,6 +315,7 @@ body {
         background: transparent;
         border: 1px solid white;
         border-bottom: 0px;
+        border-radius: 0;
         outline: none;
         color: white;
         font-weight: 500;
@@ -327,6 +328,17 @@ body {
         &:nth-child(6) {
             border-bottom: 1px solid white;
         }
+    }
+
+    select&__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+        background-size: 24px;
+        padding-right: 50px;
     }
 
     option {
@@ -564,10 +576,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 40px 30px;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     &__inner {
         width: 100%;
@@ -602,10 +614,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 40px 30px;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     &__inner {
         width: 100%;
