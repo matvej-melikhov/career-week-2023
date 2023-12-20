@@ -43,10 +43,17 @@
     document.body.onload = function() {
         document.body.style.padding = "0px";
         document.body.style.overflow = "hidden";
-        document.querySelector(".scanner-btn").style.display = "none";
-        document.getElementById("html5-qrcode-button-camera-permission").innerHTML = "<i class='fa-solid fa-camera'></i>Использовать мою камеру";
+        let scanBtn = document.querySelector(".scanner-btn");
+        if (scanBtn) scanBtn.style.display = "none";
+        
+        let interval = setInterval(() => {
+            let cameraBtn = document.getElementById("html5-qrcode-button-camera-permission");
+            if (cameraBtn) {
+                cameraBtn.innerHTML = "<i class='fa-solid fa-camera'></i>Использовать мою камеру";
+                clearInterval(interval);
+            }
+        }, 100);
     }
-
 </script>
 
 {% endblock %}
