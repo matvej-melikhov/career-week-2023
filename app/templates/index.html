@@ -35,8 +35,7 @@
                 <div class="header__logos">
                     <img class="header__etu" src="{{ url_for('static', filename='img/etu.png') }}" alt="">
                     <img class="header__etu_mini" src="{{ url_for('static', filename='img/etu-mini.png') }}" alt="">
-                    <img src="{{ url_for('static', filename='img/sokt.png') }}" alt="">
-                    <img src="{{ url_for('static', filename='img/profcom.png') }}" alt="">
+                    <img class="header__sokt" src="{{ url_for('static', filename='img/sokt.png') }}" alt="">
                 </div>
             </div>
             <div class="header__right">
@@ -48,8 +47,12 @@
             </div>
         </header>
 
+    </div>
 
-        <div class="main">
+    <div class="main">
+        <div class="main__grid"></div>
+        <div class="main__gradient-line"></div>
+        <div class="container">
             <div class="main__inner">
                 <div class="main__tags">
                     <div class="main__tag main__tag_first"><i class="fa-solid fa-clock"></i> 2-6 октября</div>
@@ -57,10 +60,27 @@
                 </div>
                 <h1 class="main__title">Студенческая <span>карьерная</span> неделя</h1>
                 <p class="main__text">Для студентов карьерная неделя — отличный <span>шанс познакомиться</span> с новыми людьми, завести <span>профессиональные связи,</span> получить инсайды и возможность получить <span>стажировку.</span></p>
-                <a href="#registration" class="main__btn"><i class="fa-solid fa-bolt-lightning"></i> Участвовать</a>
+                <div class="main__actions">
+                    <a href="#registration" class="main__btn"><i class="fa-solid fa-bolt-lightning"></i> Участвовать</a>
+                    <div class="main__stats">
+                        <div class="main__stat">
+                            <div class="main__stat-number">25+</div>
+                            <div class="main__stat-label">компаний</div>
+                        </div>
+                        <div class="main__stat-divider"></div>
+                        <div class="main__stat">
+                            <div class="main__stat-number">500+</div>
+                            <div class="main__stat-label">участников</div>
+                        </div>
+                        <div class="main__stat-divider"></div>
+                        <div class="main__stat">
+                            <div class="main__stat-number">5</div>
+                            <div class="main__stat-label">дней</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 
 
